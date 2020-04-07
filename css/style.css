@@ -1,0 +1,331 @@
+@font-face {
+  	font-family: OpenSans-Regular;
+  	src:url(../fonts/OpenSans-Regular.woff) format('woff'),
+  	url(../fonts/OpenSans-Regular.woff2) format('woff2'),
+  	url(../fonts/OpenSans-Regular.ttf) format('ttf');
+  	font-weight: 400;
+  	font-style: normal;
+}
+@font-face {
+	font-family: OpenSans-Bold;
+  	src: url(../fonts/OpenSans-Bold.woff) format('woff'),
+  	url(../fonts/OpenSans-Bold.woff2) format('woff2'),
+  	url(../fonts/OpenSans-Bold.ttf) format('ttf');
+  	font-weight: 700;
+ 	font-style: bold;
+ }
+body {
+	margin:0; /*картинка на все cover поле*/
+} 
+
+.header {
+	width: 100%;   /*1920px;	*/
+	height: 100vh;  
+	background-image: url(../images/football_1920.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: OpenSans-Bold, arial;
+	text-transform: uppercase;
+	text-align: center;		
+	display: flex;
+	position: relative;
+}
+.header::after {
+	content:"";
+    background-color: #0a0e34;
+    top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	position: absolute;
+  	opacity: 0.9;
+}
+.header-conteiner {
+  	margin-right: auto;
+  	margin-left: auto;
+    position: relative;
+  	z-index: 1;
+  	color: #ffffff;
+}
+.header-logo {
+	width: 190px;
+	margin: auto;
+	margin-top: 50px; 
+	fill: #ffffff;
+}
+.header-conteiner-title {
+  width: 1530px;
+  margin-top: 390px;
+}
+.header-title {
+	display: flex; 
+	flex-wrap: wrap;
+	text-transform: uppercase;
+	font-size: 90px;
+	line-height: 108px;
+	margin-bottom: 250px;
+}
+.header-title-left {
+	margin-left: 0px;
+}
+.header-title-right {
+    margin-left: 440px;
+}
+.socials_articles {
+	width: 730px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: auto;
+  	margin-left: auto;
+  	text-align: left;	
+}
+.socials_items {
+	width: 310px;
+	height: 76px;
+	display: flex;
+	border: 1px solid #5e42b0;
+	border-radius: 38px;
+	background-color: #5e42b0;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-family: OpenSans-Bold, arial;
+	font-size: 14px;
+	font-style: normal;
+}
+.icon {
+	margin-left: 38px;
+	margin-top: 10px;
+	margin-right:20px;
+	width: 50px;
+	height: 50px;
+	fill: #ffffff;
+}
+.socials-item-link:first-child{
+	margin-top: 10px;
+	font-size: 14px;
+	font-family: OpenSans-Regular, arial;
+}
+.section_conteiner {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	position: relative;
+}
+.section_title {
+	margin-left: 50%;
+	text-transform: uppercase;	
+	font-family: OpenSans-Bold, arial;
+	font-size: 80px;
+	line-height: 60px;
+	color: #e7e7e7;
+	margin-top: 110px;
+	margin-bottom: 50px;
+}
+.conteiner_img {
+	position: absolute;
+	width: 50%;
+	height: 1000px;
+	background-image: url(../images/footballer_566.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: contain;
+	margin-top: 30px;
+	/*margin-right: 150px;*/
+
+}
+.conteiner_items {
+	width: 100%;
+}
+.conteiner_item {
+	list-style-type: none;
+}
+.conteiner_item_links {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 50%;
+}
+.conteiner_title {
+	display: inline-flex; 
+}
+.number_rectangl {
+	display:flex;
+	flex-wrap: wrap;
+}
+.number_connection {
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 34px;
+	color: #000000;
+	font-family: OpenSans-Bold, arial;
+}
+.rectangl_connection {
+	width: 19px;
+	height: 5px;
+	border-radius: 2px;
+	background-color: #5e42b0;			     
+}
+.rectangl_connection_3 {
+	width: 19px;
+	height: 5px;
+	border-radius: 2px;
+	background-color: #efefef;			     
+}
+.title_connection {
+	width: 100%;
+	font-family: OpenSans-Bold, arial;	
+	text-transform: uppercase;	
+	font-size: 36px;
+	letter-spacing: 2px;
+	line-height: 34px;
+	color: #c1c1c1;
+}
+.conteiner_news {
+	max-width: 710px;
+	text-transform: none;
+	font-size: 20px;
+	font-family: OpenSans-Regular, arial;
+	color: #000000;	
+	letter-spacing: 1px;
+}
+.conteiner_news_3 {
+	max-width: 710px;
+	text-transform: none;
+	font-size: 20px;
+	font-family: OpenSans-Regular, arial;
+	color: #ffffff;	
+	letter-spacing: 1px;
+}
+.color_2 {
+	background-color: #f6f4fa; 
+}
+.color_3 {
+	background-color: #5e42b0;
+}
+
+/*********************************************************************
+@media (min-width: 641px) {
+   .header {
+   	background-image: url(../image/football_1280.jpg);
+   }
+
+	.logo {
+	   width: 205px;
+	   margin-top: 38px; 
+   }
+
+   .welcome {
+		margin-top: 180px;
+		margin-left: 90px;
+   }
+
+   .welcome_title {
+   	font-size: 64px;
+   	letter-spacing: 3px;
+   }
+
+   .welcome_title:last-child {
+   	margin-left: 100px;
+   }
+
+   .socials_articles {
+   	width: 650px;
+   	margin-top: 310px;
+   }
+
+   .socials_items {
+		width: 310px;
+		height: 75px;	
+	}
+
+	.socials_items:last-child {
+		margin-top: 0px;
+		margin-left: 30px; 
+	}
+}
+*********************************************************************/
+
+
+
+
+.footer {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/game_1920.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-color: #444444;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+.footer::after {
+	content: "";
+	width: 100%;
+	min-height: 100vh;
+	box-sizing: border-box;
+	position: absolute;
+	background-color: #0a0e34;
+	opacity: 0.9;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0; 
+}
+.footer_container {
+   position: relative;
+   z-index: 1;
+   color: #ffffff;
+}
+.footer_container_logo_title {
+	margin-top: 225px;
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+}
+.footer_container_logo {
+	width: 130px;
+	height: 135px;
+	border: 1px solid #5e42b0;
+	border-radius: 30px;
+	background-color: #5e42b0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer_logo {
+	width: 100px;
+	height: 90px;
+	fill: #ffffff;
+}
+
+.footer_titles {
+	font-size: 20px;
+}
+.footer_title {
+	text-align: left;	
+	margin-left: 35px;
+	text-transform: uppercase;
+	color: #9b8ec1;
+}
+.footer_title:first-child {
+	font-size: 55px;
+	font-family: OpenSans-Bold, arial;
+	color: #ffffff;
+}
+
+.header_socials_articles {
+	width: 730px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 150px;
+	margin-right: auto;
+  	margin-left: auto;
+  	margin-bottom: 250px;
+  	text-transform: uppercase;
+}
+
+
